@@ -11,11 +11,19 @@ documentation.
 # Installation
 
 Install the [Packagist archive](https://packagist.org/packages/henderjon/gooseberry)
-using [Composer](http://getcomposer.org/).
+using [Composer](http://getcomposer.org/). I will *generally* respect
+[Semantic Versioning](http://semver.org/). Learn about how Composer
+does [versions](https://getcomposer.org/doc/01-basic-usage.md#package-versions).
 
-# Versions
+*Note the absense of v1.0*
 
-I will *generally* respect [Semantic Versioning](http://semver.org/).
+```
+{
+	"require" : {
+		"henderjon/gooseberry": "dev-master"
+	}
+}
+```
 
 # License
 
