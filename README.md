@@ -40,7 +40,7 @@ wouldn't hurt. I need to make some decisions in this regard.
 
 I think file uploads, while not necessary for my purposes, would be useful--but that
 would end up being ALOT of code for something I don't do very often.
-[See example](// http://www.daniweb.com/web-development/php/threads/370401/multiple-file-upload-problem-using-stream_context_create-function).
+[See example](http://www.daniweb.com/web-development/php/threads/370401/multiple-file-upload-problem-using-stream_context_create-function).
 
 
 
