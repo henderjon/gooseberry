@@ -38,6 +38,10 @@ Right now there is no recovery from error (either cURL or HTTP). This is by desi
 there are APIs that are simply so unreliable that having a retry loop or a sleep() call
 wouldn't hurt. I need to make some decisions in this regard.
 
+I think file uploads, while not necessary for my purposes, would be useful--but that
+would end up being ALOT of code for something I don't do very often.
+[See example](// http://www.daniweb.com/web-development/php/threads/370401/multiple-file-upload-problem-using-stream_context_create-function).
+
 
 
 
