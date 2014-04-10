@@ -3,6 +3,8 @@
 
 require "vendor/autoload.php";
 
+use \Gooseberry\Gooseberry;
+
 $api = "http://httpbin.org";
 
 $endpoints = array(
@@ -13,10 +15,10 @@ $endpoints = array(
 	"ip",
 );
 
-$dingle = new \Gooseberry\Gooseberry($api, $endpoints);
+$dingle = new Gooseberry($api, $endpoints);
 
 $dingle->setHeaders([
-	"User-Agent"    => "PHP CLI - Gooseberry",
+	"User-Agent" => "PHP CLI - Gooseberry",
 ]);
 
 //$var = $Obj->HTTPMethod($endoint, $queryData);

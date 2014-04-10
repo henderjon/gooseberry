@@ -54,10 +54,8 @@ trait HTTPContextHelper {
 	 * @return string
 	 */
 	protected function toQueryString(array $data = array()){
-		if($data){
-			return http_build_query($data, "no_", "&");
-		}
-		return "";
+		if(!$data){ return ""; }
+		return http_build_query($data, "no_", "&");
 	}
 	/**
 	 * method to normalize the headers
@@ -69,19 +67,6 @@ trait HTTPContextHelper {
 			$finalHeader[] = sprintf("%s: %s", ucwords($header), trim($value));
 		}
 		return implode("\r\n", $finalHeader);
-	}
-	/**
-	 * method to execute the request.
-	 * @param type $url
-	 * @param type $context
-	 * @return type
-	 */
-	protected function ping($url, $context){
-		$stream = fopen($url, 'r', false, $context);
-		$this->responseInfo = stream_get_meta_data($stream);
-		$response = stream_get_contents($stream);
-		fclose($stream);
-		return $response;
 	}
 
 }
