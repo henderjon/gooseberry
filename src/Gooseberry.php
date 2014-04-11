@@ -47,7 +47,7 @@ class Gooseberry {
 	function get($endpoint, array $data = array()){
 		$url = $this->normalizeEndpoint($endpoint, $data);
 
-		$context = $this->createContext("GET");
+		$context = $this->createHTTPContext("GET");
 
 		return $this->ping($url, $context);
 	}
@@ -62,7 +62,7 @@ class Gooseberry {
 
 		$this->setHeaders(["Content-type" => "application/x-www-form-urlencoded"]);
 
-		$context = $this->createContext("POST", $data);
+		$context = $this->createHTTPContext("POST", $data);
 
 		return $this->ping($url, $context);
 	}
