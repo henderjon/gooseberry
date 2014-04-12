@@ -1,6 +1,6 @@
 # Gooseberry
 
-Gooseberry is a simple wrapper for PHP's cURL functions. It's designed to be
+Gooseberry is a simple utility to make http calls. It's designed to be
 used for easily accessing simple APIs.
 
 # Usage
@@ -42,7 +42,7 @@ I think file uploads, while not necessary for my purposes, would be useful--but 
 would end up being ALOT of code for something I don't do very often.
 [See example](http://www.daniweb.com/web-development/php/threads/370401/multiple-file-upload-problem-using-stream_context_create-function).
 
-
+[![Build Status](https://travis-ci.org/henderjon/gooseberry.svg?branch=master)](https://travis-ci.org/henderjon/gooseberry)
 
 
 
