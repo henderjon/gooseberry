@@ -90,9 +90,9 @@ class Gooseberry {
 	}
 	/**
 	 * method to execute the request.
-	 * @param type $url
-	 * @param type $context
-	 * @return type
+	 * @param string $url
+	 * @param resource $context
+	 * @return string
 	 */
 	protected function ping($url, $context){
 		$stream = fopen($url, 'r', false, $context);
